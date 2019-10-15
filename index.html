@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Clock</title>
+     <link rel="stylesheet" href="all.css">
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ </head>
+
+ <body>
+     <div class="content" id="app">
+         <img src="img/clock-bg@2x.png" class="clock">
+         <img src="img/hour-hand@2x.png" id="hour" class="hour hand"
+         v-bind:style="{transform: 'translate(0, -50%) rotate(' + degree.hour + 'deg)'}">
+         <img src="img/minute-hand@2x.png" id="min" class="min hand"
+         v-bind:style="{transform: 'translate(-50%, -100%) rotate(' + degree.min + 'deg)'}">
+         <img src="img/second-hand@2x.png" id="sec" class="sec hand"
+         v-bind:style="{transform: 'translate(-50%, 0) rotate(' + degree.sec + 'deg)'}">
+         
+     </div>
+    <script src="all.js"></script>
+ </body>
+
+ </html>
